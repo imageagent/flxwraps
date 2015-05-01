@@ -1,0 +1,208 @@
+extends layouts/default
+block content
+
+  //- Introduction Masthead
+  section.intro
+    .container
+      h1 Vehicle Wraps &amp; Graphics
+      h2 FLX Wraps is the premier large-format graphics and vehicle wrap specialists in Cayuga County. From design to installation, FLX Wraps gets it done right.
+
+  //- Section: About FLX Wraps
+  section#about.main.about
+    .container
+      .row
+        .col-sm-8.about-content
+          h2 About FLX
+            span.thin Wraps
+          p Based in Auburn, New York, <strong>FLX Wraps</strong> is a full service, large-format graphics and vehicle wrap company specializing in wall wraps, commercial fleet and personal vehicle graphics and more.
+          p From design to print to installation, we help your message get to your customers from start to finish professionally and with top-notch service.
+          ul.list-unstyled
+            li
+              h3.icon-check Full Wraps
+              p The ultimate way to promote your brand on the road. From top to bottom, your vehicle will be decked out in a way that your customers will never miss.
+            li
+              h3.icon-check Half Wraps
+              p The second-best marketing tool we offer. Your company's message will be sure to be seen with a beautifully designed half-wrap.
+            li
+              h3.icon-check Vinyl Graphics
+              p On a budget? Vinyl graphics and lettering help you get your message across without a heavy up-front investment.
+          a.btn.btn-primary.btn-lg(href='#contact') Contact us today
+        #quote.col-sm-4.sidebar-container
+          form.form(method='POST', action='//formspree.io/ryan@imageagent.net')
+            h2 Get a 
+              span.thin Quote
+            .form-group
+              label(for='formName') Name *
+              input#formName.form-control(type='text', placeholder='Enter your name', name='Name', required='')
+            .form-group
+              label(for='formEmail') Email Address *
+              input#formEmail.form-control(type='email', placeholder='Enter your email', name='Email', required='')
+            .form-group
+              label(for='formVehicle') Vehicle Make &amp; Model *
+              input#formVehicle.form-control(type='text', placeholder='e.g. Ford Transit', name='Vehicle', required='')
+            .form-group
+              label(for='formOptions') Wrap Type *
+              select#formOptions.form-control(name='Wrap Type', required='')
+                option(value='Full-Wrap') Full Wrap
+                option(value='Half-Wrap') Half Wrap
+                option(value='Vinyl Graphic') Vinyl Graphic
+            input(type='hidden', name='_subject', value='FLX Wraps - Request for Quote')
+            input(type='hidden', name='_next', value='http://flxwraps.com/thanks.html')
+            input(type='text', name='_gotcha', style='display:none')
+            input.btn.btn-primary.btn-lg.btn-block(type='submit', value='Send me a quote')
+
+  //- Section: Gauges
+  section#gauges.main.stats
+    .container
+      h2 More bang for your 
+        span.thin buck
+      p Compared to traditional forms, vehicle wrap advertising is the most cost-effective.
+      .row.heat-gauges
+        .col-sm-4.stat
+          h3 Vehicle Wrap
+          .heat-gauge.low
+          .stat-info
+            h4#hg-price-low
+            em Cost per thousand impressions
+        .col-sm-4.stat
+          h3 Television
+          .heat-gauge.med
+          .stat-info
+            h4#hg-price-med
+            em Cost per thousand impressions
+        .col-sm-4.stat
+          h3 Newspaper
+          .heat-gauge.hi
+          .stat-info
+            h4#hg-price-hi
+            em Cost per thousand impressions
+      p.fine-print Statistics compiled by the Outdoor Advertising Association of America.
+
+  //- Section: The Process
+  section#process.main.process
+    .container
+      h2 How it 
+        span.thin Works
+      .row(style='margin:4em 0;')
+        .col-sm-4.process-part
+          .how-image
+            img(src='images/how/how-design.png', alt='Design')
+          h3 Design
+          p With our backgrounds in design and marketing, we do not stop until we’ve got an effective and eye-catching vehicle wrap based around your target audience and your marketing goals.
+        .col-sm-4.process-part
+          .how-image
+            img(src='images/how/how-print.png', alt='Print')
+          h3 Print
+          p Once we have an approved design, it’s time to print it. Your graphics are ready in about 3-5 business days. We use 3M and Arlon vehicle wrap vinyl with overlaminate, which we include on all wraps.
+        .col-sm-4.process-part
+          .how-image
+            img(src='images/how/how-install.png', alt='Install')
+          h3 Install
+          p Our professional installers will clean you vehicle and take care to ensure proper application of your vinyl wrap or decals. After 1-3 days, your vehicle will be ready to make a statement on the road.
+
+  //- Section: Examples Carousel
+  section#examples.main.examples
+    .container
+      h2 Our 
+        span.thin Work
+      .banner
+        ul
+          li
+            img(src='images/slides/slide-national-01.jpg', alt='National Maintenance Van Wrap')
+            .slide-caption National Maintenance Van Wrap / 2015
+          li
+            img(src='images/slides/slide-jacobs-01.jpg', alt='Jacobs Press Van Wrap')
+            .slide-caption Jacobs Press Van Wrap / 2015
+          li
+            img(src='images/slides/slide-prisoncity-01.jpg', alt='Prison City Pub Wall Wrap')
+            .slide-caption Prison City Pub Wall Wrap / 2014
+          li
+            img(src='images/slides/slide-teriktech-01.jpg', alt='TerikTech Van Wrap')
+            .slide-caption TerikTech Van Wrap / 2014
+          li
+            img(src='images/slides/slide-teriktech-02.jpg', alt='TerikTech Van Wrap')
+            .slide-caption TerikTech Van Wrap / 2014
+          li
+            img(src='images/slides/slide-kohilo-01.jpg', alt='Kohilo MERES Wrap')
+            .slide-caption Kohilo MERES Wrap / 2013
+          li
+            img(src='images/slides/slide-kohilo-03.jpg', alt='Kohilo MERES Wrap')
+            .slide-caption Kohilo MERES Wrap / 2013
+          li
+            img(src='images/slides/slide-mgr-01.jpg', alt='Merry Go Round Playhouse Vinyl Decals')
+            .slide-caption Merry Go Round Playhouse Vinyl Decals / 2013
+          li
+            img(src='images/slides/slide-mgr-02.jpg', alt='Merry Go Round Playhouse Vinyl Decals')
+            .slide-caption Merry Go Round Playhouse Vinyl Decals / 2013
+          li
+            img(src='images/slides/slide-ia-01.jpg', alt='Image Agent Wall Wrap')
+            .slide-caption Image Agent Wall Wrap / 2013
+        a.unslider-arrow.prev(href='#') ‹
+        a.unslider-arrow.next(href='#') ›
+
+  //- Section: Contact Us
+  section#contact.main.contact
+    .container
+      .row
+        .col-sm-8
+          h2 FAQ
+            span(style='text-transform:none;') s
+          #accordion.panel-group(role='tablist', aria-multiselectable='true')
+            // One
+            .panel.panel-default
+              a(data-toggle='collapse', data-parent='#accordion', href='#collapseOne', aria-expanded='false', aria-controls='collapseOne')
+                #headingOne.panel-heading(role='tab')
+                  h4.panel-title How much do vehicle wraps cost?
+              #collapseOne.panel-collapse.collapse.in(role='tabpanel', aria-labelledby='headingOne')
+                .panel-body Every vehicle &amp; application is different, so price really depends on the scope of your vehicle wrap project. Vehicle wraps can range from $800 - $4,000. For a more precise quote, contact us with more information about your wrap project.
+            // Two
+            .panel.panel-default
+              a(data-toggle='collapse', data-parent='#accordion', href='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
+                #headingTwo.panel-heading(role='tab')
+                  h4.panel-title Do I have to get a full wrap or do I have other options?
+              #collapseTwo.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingTwo')
+                .panel-body We work with your budget to get you the most advertising for your dollar. You can do just windows, or partial wraps. One option is to start out with just perforated window graphic and then add to it as your business grows to make a complete wrap.
+            // Three
+            .panel.panel-default
+              a(data-toggle='collapse', data-parent='#accordion', href='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
+                #headingThree.panel-heading(role='tab')
+                  h4.panel-title Does a vehicle wrap damage your paint?
+              #collapseThree.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingThree')
+                .panel-body No, a car wrap, when applied and removed correctly by a professional installer, will actually protect your paint.
+            // Four
+            .panel.panel-default
+              a(data-toggle='collapse', data-parent='#accordion', href='#collapseFour', aria-expanded='false', aria-controls='collapseFour')
+                #headingFour.panel-heading(role='tab')
+                  h4.panel-title How durable is a vinyl wrap?
+              #collapseFour.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingFour')
+                .panel-body Every vehicle wrap is laminated after printing. This helps to protect the wrap. It comes in Matte or Gloss finish. The majority of vehicle wraps last for 3 to 5 years, but there is no guarantee. We do, however, offer the 3 year manufacturer’s warranty.
+            // Five
+            .panel.panel-default
+              a(data-toggle='collapse', data-parent='#accordion', href='#collapseFive', aria-expanded='false', aria-controls='collapseFive')
+                #headingFive.panel-heading(role='tab')
+                  h4.panel-title Can you wrap my boat? What about a plane?
+              #collapseFive.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingFive')
+                .panel-body If it exists, we'll wrap it.
+            // Six
+            .panel.panel-default
+              a(data-toggle='collapse', data-parent='#accordion', href='#collapseSix', aria-expanded='false', aria-controls='collapseSix')
+                #headingSix.panel-heading(role='tab')
+                  h4.panel-title How much do you charge for a vehicle wrap design?
+              #collapseSix.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingSix')
+                .panel-body Our hourly rate for design and revisions is $75.00 an hour.
+        .col-sm-4.contact-content
+          h2 Contact 
+            span.thin Us
+          ul.list-unstyled
+            li.icon-phone (315) 282-7581
+            li.icon-email
+              a(href='mailto:info@flxwraps.com', title='Email FLX Wraps') info@flxwraps.com
+            li.icon-map
+              a(href='https://goo.gl/maps/z0qRT', title='Google Maps - FLX Wraps') 26 Osborne Street
+            li.icon-twitter
+              a(href='https://twitter.com/flxwraps', title='FLX Wraps on Twitter') @flxwraps
+            li.icon-facebook
+              a(href='https://www.facebook.com/flxwraps', title='FLX Wraps on Facebook') FLX Wraps
+          a.btn.btn-primary.btn-lg(href='#quote') Request a quote
+
+    

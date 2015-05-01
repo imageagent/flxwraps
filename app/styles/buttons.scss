@@ -1,0 +1,21 @@
+.btn {
+  border-radius: 2px;
+}
+
+.btn-primary {
+  background-color: #333;
+  border-color: #333;
+  margin-top: 0.5em;
+  transition: all 0.15s ease;
+
+  &:hover {
+    background-color: #111;
+    border-color: #111;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .btn-primary {
+    margin-top: 1em;
+  }
+}

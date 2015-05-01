@@ -1,0 +1,47 @@
+a {
+  color: $orange;
+
+  &:hover {
+    color: darken($orange, 10%);
+  }
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 900;
+  margin: 0 0 1em;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.25em;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.thin {
+  font-weight: 400;
+}
+
+.fine-print {
+  color: #999;
+  font-size: 0.8em;
+  font-style: italic;
+}
+
+@media only screen and (min-width: 768px) {
+  h2 {
+    font-size: 2.5em;
+  }
+
+  h3 {
+    font-size: 1.7em;
+  }
+
+  p {
+    font-size: 1.25em;
+  }
+}
